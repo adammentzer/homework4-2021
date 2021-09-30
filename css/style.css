@@ -63,9 +63,9 @@ a{
 
 /*Req 5*/
 /*Add selector and rule here*/
-input:focus {
-  border-color:#417243;
-  border-style: dashed;
+*:focus {
+  border:2px dashed #417243;
+
 }
 
 th{
@@ -87,7 +87,7 @@ td{
 
 .colhead{
   color: #FFFFFF;
-  background-color: #7e0825;
+  background-color: rgb(126, 8, 37);
   text-transform: uppercase;
   min-width: 125px;
   padding-top: 10px;
@@ -155,8 +155,7 @@ background: #D1D1D1;
 }
 
 tr:hover{
-background: (126, 8, 37, 1);
-opacity: 0.25;
+background: rgba(126, 8, 37, 0.25);
 /*HOVERING CHANGES TO SAME BACKGROUND AS COLUMN HEADER BUT WITH .25 TRANSPARENCY
 SO YOU CAN'T USE HEXADECIMAL*/
 }
